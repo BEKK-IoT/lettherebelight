@@ -14,7 +14,7 @@ board.on('ready', function() {
             tv: tv
         });
         lightRef.on('value', function(data){
-            if(data.val() == "true"){
+            if(data.val() == true){
                     console.log("turning on "+data.val());
                     lamp.on();
             } else{
