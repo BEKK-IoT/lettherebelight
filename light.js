@@ -1,7 +1,7 @@
 var raspi = require('raspi-io');
 var five = require('johnny-five');
 var Firebase = require('firebase');
-var lightRef = new Firebase('https://lettherebelight.firebaseio.com/switch');
+var lightRef = new Firebase('https://hemmeligurl.com/switch');
 var board = new five.Board({
   io: new raspi()
 });
