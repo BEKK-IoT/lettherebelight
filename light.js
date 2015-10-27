@@ -8,9 +8,6 @@ var board = new five.Board({
 
 board.on('ready', function() {
         var lamp = new five.Relay({pin:'P1-22', type: 'NC'});
-        this.repl.inject({
-            lamp: lamp,
-        });
         lightRef.on('value', function(data){
             if(data.val() == true){
                     console.log("turning on "+data.val());
